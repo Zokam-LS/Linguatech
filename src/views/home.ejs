@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head')  %> 
+  
+  <body>
+    <%- include('./partials/header')  %> 
+    <main>
+      <hr>
+      <div class="activities" id="activities">
+        <div class="activities__left">
+          <div class="activities__left__inputs">
+            <input type="text" id="inputs__activiy" placeholder="Search your activity">
+            <input type="text" id="inputs__location" placeholder="Area">
+          </div>
+          <a href="/"><button class="activities__left__btn">Take me there!</button></a>
+        </div>
+        <div class="activities__right">
+          <h2 id="happening">Check what's going on</h2>
+          <div class="activities__right__bubbles">
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+            <button class="bubble">Activity</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="about" id="about">
+        <div class="about__imgs-container">
+          <img src="/imgs/find.webp" alt="Finding people image" class="about__img rounded-circle">
+          <p class="about__p">Find communities</p>
+        </div>
+        <div class="about__imgs-container">
+          <img src="/imgs/share.webp" alt="People sharing a moment" class="about__img rounded-circle">
+          <p class="about__p">Share with others</p>
+        </div>
+      </div>
+      <hr>
+    </main>
+
+    <%- include('./partials/footer') %> 
+  </body>
+</html>
